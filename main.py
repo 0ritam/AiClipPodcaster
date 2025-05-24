@@ -64,7 +64,7 @@ def main():
     url = ai_podcast_clipper.process_video.web_url
 
     payload ={
-        "s3_key":"test/rimed7.mp4"
+        "s3_key":"test1/rimed7.mp4"
     }
 
     headers = {
