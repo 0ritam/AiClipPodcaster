@@ -21,6 +21,8 @@ wheels/
 *.egg
 MANIFEST
 
+whisperx/
+
 # Virtual Environment
 venv312
 venv/
