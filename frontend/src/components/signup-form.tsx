@@ -80,7 +80,7 @@ export function SignupForm({
                   required
                   {...register("email")}
                 />
-                {errors.email && (<p className="text-sm text-red-500">{"errors.email.message"}</p>)}
+                {errors.email && (<p className="text-sm text-red-500">{errors.email.message}</p>)}
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
@@ -93,10 +93,10 @@ export function SignupForm({
                   </a>
                 </div>
                 <Input id="password" type="password" required {...register("password")} />
-                {errors.password && (<p className="text-sm text-red-500">{"errors.password.message"}</p>)}
+                {errors.password && (<p className="text-sm text-red-500">{errors.password.message}</p>)}
               </div>
 
-              {error && (<p className="text-red-500 rounded-md bg-red-50 text-sm p-3">{"error"}</p>)}
+              {error && (<p className="text-red-500 rounded-md bg-red-50 text-sm p-3">{error}</p>)}
               <Button type="submit" className="w-full" disabled={isSubmitting}>
                 {isSubmitting ? "Signing up..." : "Sign up"}
               </Button>
